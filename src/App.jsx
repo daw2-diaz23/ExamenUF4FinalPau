@@ -1,13 +1,14 @@
-
+// src/App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './component/Header';
 import Register from './vistas/Registre';
 import Login from './vistas/Login';
 import Panel from './vistas/Panell';
-import { GlobalProvider } from './context/GlobalContext';
+import {  GlobalProvider } from './context/GlobalContext';
 
 const App = () => {
   return (
+    
     <GlobalProvider>
       <Router>
         <Header />
@@ -18,6 +19,7 @@ const App = () => {
         </Routes>
       </Router>
     </GlobalProvider>
+    
   );
 };
 

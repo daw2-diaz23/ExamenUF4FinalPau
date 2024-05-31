@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TablaResueltos = () => {
     const { data } = useContext(GlobalContext);
-    const { ticketsResueltos } = data;
+    const { ticketsResueltos = [] } = data; // Provide default value
 
     return (
         <div className="mt-5">
